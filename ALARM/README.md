@@ -60,7 +60,7 @@ http://localhost:8000
 For Software:
 
 # Screenshots (Add at least 3)
-![Main Interface](screenshot1.png)
+![screenshot1.png](screenshot1.png)
 *The main interface showing the modern dark theme with gradient animations and control panel*
 
 ![Settings Panel](screenshot2.png)
@@ -114,3 +114,4 @@ Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects) 
+
