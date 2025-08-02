@@ -1,3 +1,5 @@
+![Banner](BANNER.png)
+
 # Reverse Alarm Clock 🌙
 
 ## Basic Details
@@ -72,6 +74,26 @@ For Software:
 HTML loads → Clock UI appears → Random alarm time generated → Timer runs silently → Alarm triggers randomly → Sound plays + Message pops up → User remains asleep
 
 *Workflow diagram showing the random alarm scheduling, sound generation, and notification system*
+
+For Hardware:
+
+# Schematic & Circuit
+![Circuit](https://via.placeholder.com/800x600/4ecdc4/ffffff?text=Browser+Audio+Circuit)
+*Browser audio processing circuit showing Web Audio API signal flow*
+
+![Schematic](https://via.placeholder.com/800x600/ff6b6b/ffffff?text=Service+Worker+Architecture)
+*Service Worker architecture showing background sync and notification handling*
+
+# Build Photos
+![Components](https://via.placeholder.com/800x600/2ed573/ffffff?text=Web+Components)
+*HTML, CSS, JavaScript, Service Worker, and PWA manifest files*
+
+![Build](https://via.placeholder.com/800x600/ffa502/ffffff?text=Development+Process)
+*Development process showing code creation and testing phases*
+
+![Final](https://via.placeholder.com/800x600/00d4ff/ffffff?text=Final+Product)
+*Final working application running in browser with all features active*
+
 ### Project Demo
 # Video
 [Reverse Alarm Clock Demo](Reverse%20Alarm%20Clock%20-%20Made%20with%20Clipchamp_1754091829864.mp4)

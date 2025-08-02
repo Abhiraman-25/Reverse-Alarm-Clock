@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Alarm Clock - Wake Up to Go Back to Sleep</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00d4ff">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">🌙 Reverse Alarm Clock</h1>
+            <p class="subtitle">Wake up randomly at night to remember to go back to sleep</p>
+        </header>
+
+        <main>
+            <div class="status-card">
+                <div class="status-indicator" id="statusIndicator">
+                    <div class="status-dot"></div>
+                    <span id="statusText">Inactive</span>
+                </div>
+                <div class="next-alarm" id="nextAlarm">
+                    <span>Next alarm: Not scheduled</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-primary" id="startBtn">Start Reverse Alarm</button>
+                <button class="btn btn-secondary" id="stopBtn" disabled>Stop</button>
+                <button class="btn btn-test" id="testBtn">Test Sound</button>
+            </div>
+
+            <div class="settings">
+                <h2>Settings</h2>
+                
+                <div class="setting-group">
+                    <label for="startTime">Active Hours:</label>
+                    <div class="time-range">
+                        <input type="time" id="startTime" value="22:00">
+                        <span>to</span>
+                        <input type="time" id="endTime" value="06:00">
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="minInterval">Minimum Interval (minutes):</label>
+                    <input type="number" id="minInterval" value="30" min="5" max="180">
+                </div>
+
+                <div class="setting-group">
+                    <label for="maxInterval">Maximum Interval (minutes):</label>
+                    <input type="number" id="maxInterval" value="120" min="10" max="300">
+                </div>
+
+                <div class="setting-group">
+                    <label for="soundType">Annoying Sound Effect:</label>
+                    <select id="soundType">
+                        <option value="dialup">Dial-up Modem</option>
+                        <option value="beep">High-Pitched Beep</option>
+                        <option value="squeal">Electronic Squeal</option>
+                        <option value="static">Radio Static</option>
+                        <option value="chirp">Digital Chirp</option>
+                        <option value="whine">Electronic Whine</option>
+                    </select>
+                </div>
+
+                <div class="setting-group">
+                    <label for="volume">Volume:</label>
+                    <input type="range" id="volume" min="0" max="100" value="50">
+                    <span id="volumeValue">50%</span>
+                </div>
+
+                <div class="setting-group">
+                    <label for="duration">Alarm Duration (seconds):</label>
+                    <input type="number" id="duration" value="10" min="1" max="60">
+                </div>
+            </div>
+
+            <div class="history">
+                <h2>Recent Alarms</h2>
+                <div class="history-list" id="historyList">
+                    <p class="no-history">No alarms triggered yet</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="alarm-overlay" id="alarmOverlay">
+            <div class="alarm-modal">
+                <h2>🌙 Time to Wake Up!</h2>
+                <p>Remember to go back to sleep...</p>
+                <button class="btn btn-dismiss" id="dismissBtn">Dismiss</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
